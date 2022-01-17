@@ -3,11 +3,11 @@ from raiseexcetionex import UserEx
 a='10'
 try:
     print(10/0)
-except ArithmeticError as e:
-    print(f"there was an {e} error")
-except ZeroDivisionError as e:
-    print(e)
-except Exception as e:
+#except ArithmeticError as e:
+ #   print(f"there was an {e} error")
+#except ZeroDivisionError as e:
+#    print(e)
+except BaseException as e:
     print(f"ocurredd   {e}")
 else:
     print("error")
@@ -20,3 +20,10 @@ try:
     raise(UserEx())
 except UserEx as e:
     print(e)
+
+try:
+                print("hai")
+except Warning:
+    print("hai")
+
+help(Exception)
