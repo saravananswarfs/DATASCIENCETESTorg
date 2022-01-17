@@ -7,7 +7,7 @@ class P(ABC):
         self.cd="mas"
     @abstractmethod
     def play(self):
-        pass
+        print("Impletion should be done")
     @staticmethod
     def stop():
         print("the video is stopped")
